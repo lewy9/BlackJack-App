@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/gameBoard">
+
+    <Button
+            android:text="SignOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/signOut"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text=" "
+            android:layout_width="159dp"
+            android:layout_height="43dp" android:id="@+id/wl"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="88dp"
+            app:layout_constraintStart_toEndOf="@+id/signOut" app:layout_constraintEnd_toStartOf="@+id/leaderBoard"
+            android:layout_marginEnd="88dp" android:textSize="24sp" android:textStyle="bold"
+            android:textAlignment="center"/>
+    <Button
+            android:text="Rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/leaderBoard"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginTop="72dp"
+            app:layout_constraintTop_toBottomOf="@+id/signOut" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:id="@+id/dealerCard" app:layout_constraintHorizontal_bias="0.0">
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginTop="100dp"
+            app:layout_constraintTop_toBottomOf="@+id/dealerCard" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:id="@+id/playerCard">
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
